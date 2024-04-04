@@ -4,14 +4,6 @@
     padding: 20px;
     background-color: #f8f9fa;
 }
-.logo {
-    width: 60px;
-}
 .search-bar {
     width: 50%;
-}
-.login-register {
-    cursor: pointer;
-    color: blue;
-    text-decoration: underline;
 }

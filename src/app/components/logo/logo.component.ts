@@ -9,7 +9,7 @@ import { Router, RouterLink } from '@angular/router';
   styleUrl: './logo.component.css'
 })
 export class LogoComponent {
-  imagenLogo = "https://imgs.search.brave.com/3ITDaOa34GB0y7msOV-iotJt3FeVeTomynfBv3h06q8/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJjYXZlLmNv/bS93cC93cDczNTE5/MjMuanBn"
+  imagenLogo = "../../assets/logo.svg"
 
   constructor(private router: Router) {
 
