@@ -1,7 +1,29 @@
-<div class="favoritos">
-    <div>
-        <img src="https://firebasestorage.googleapis.com/v0/b/intercromo-6a7d7.appspot.com/o/images%2FGyarados_Cromo.jpg?alt=media&token=d4986c90-978e-45e5-a756-54dfb05e8dac">
-        <h3>Gyarados</h3>
-        <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, adipisci asperiores, odit nobis voluptate sint quis illum consequatur eius voluptas, libero labore quae aliquid quasi? Mollitia dolorum facere libero iure!</h4>
+<head>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+  />
+</head>
+<div class="cromo-container">
+  <div *ngFor="let cromo of cromos" class="favoritos">
+    <img [src]="cromo.imagen" />
+    <div class="cromo-info">
+      <h3>
+        <i class="fas fa-redo" id="renew-icon"></i>
+        <!-- Icono de renovar -->
+        {{ cromo.nombre }}
+        <i
+          class="far fa-heart"
+          [ngClass]="{
+            'fas fa-heart': cromo.favorito,
+            'far fa-heart': !cromo.favorito
+          }"
+          (click)="toggleFavorito(cromo)"
+          style="cursor: pointer"
+        ></i>
+        <!-- Icono de corazón favorito -->
+      </h3>
+      <p>{{ cromo.descripcion }}</p>
     </div>
+  </div>
 </div>
