@@ -1,9 +1,9 @@
-.header {
+header {
     display: flex;
+    padding-inline-start: 30px;
+    padding-inline-end: 30px;
     justify-content: space-between;
-    padding: 20px;
-    background-color: #f8f9fa;
-}
-.search-bar {
-    width: 50%;
+    background-color: #768cbb;
+    align-items: center;
+    margin-inline: 20px;
 }
