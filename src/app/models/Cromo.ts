@@ -5,6 +5,7 @@ export class Cromo {
     private _descripcion: string;
     private _imagen: string;
     private _idUsuario: string;
+    private _
 
     constructor(nombre: string, categoria: string, descripcion: string, imagen: string, idUsuario: string) {
         this._nombre = nombre;
