@@ -1,0 +1,64 @@
+#caja-login {
+  width: 350px;
+  height: 450px;
+  margin: 0 auto;
+  border-radius: 30px;
+  border: 1px solid black;
+}
+
+.imagen-boton {
+  height: 20px;
+  width: 22px;
+  margin-right: 5px;
+}
+
+#textos {
+  align-items: center;
+  justify-content: center;
+  font-family: Verdana;
+  padding: 8px;
+  margin-bottom: 50px;
+}
+
+#textos p {
+  font-size: 30px;
+  color: green;
+  text-align: left;
+}
+
+#textos b {
+  font-size: 30px;
+  text-align: center;
+  color: orange;
+}
+
+#botones {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#botones button {
+  border-radius: 20px;
+  background-color: transparent;
+  align-items: center;
+  justify-content: center;
+  font-family: Verdana;
+  font-size: 15px;
+  height: 40px;
+  width: 300px;
+  margin-bottom: 5px;
+}
+
+#botones p {
+  margin-top: 20px;
+  font-family: Verdana;
+  color: orange;
+  font-size: 14px;
+}
+
+#botones a {
+  text-decoration: none;
+  color: inherit;
+}

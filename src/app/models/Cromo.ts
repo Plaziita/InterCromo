@@ -1,57 +1,68 @@
 export class Cromo {
+  private _nombre: string;
+  //private _categoria: string;
+  private _descripcion: string;
+  private _imagen: string;
+  // private _idUsuario: string;
+  private _favorito: boolean;
 
-    private _nombre: string;
-    private _categoria: string;
-    private _descripcion: string;
-    private _imagen: string;
-    private _idUsuario: string;
-    private _
+  constructor(
+    nombre: string,
+    descripcion: string,
+    imagen: string,
+    favorito: boolean = false
+  ) {
+    this._nombre = nombre;
+    this._descripcion = descripcion;
+    this._imagen = imagen;
+    this._favorito = favorito;
+  }
 
-    constructor(nombre: string, categoria: string, descripcion: string, imagen: string, idUsuario: string) {
-        this._nombre = nombre;
-        this._categoria = categoria;
-        this._descripcion = descripcion;
-        this._imagen = imagen;
-        this._idUsuario = idUsuario;
-    }
+  get nombre() {
+    return this._nombre;
+  }
 
-    get nombre() {
-        return this._nombre;
-    }
+  set nombre(nombre: string) {
+    this._nombre = nombre;
+  }
+  /*
+  get categoria() {
+    return this._categoria;
+  }
 
-    set nombre(nombre: string) {
-        this._nombre = nombre;
-    }
+  set categoria(categoria: string) {
+    this._categoria = categoria;
+  }
+*/
+  get descripcion() {
+    return this._descripcion;
+  }
 
-    get categoria() {
-        return this._categoria;
-    }
+  set descripcion(descripcion: string) {
+    this._descripcion = descripcion;
+  }
 
-    set categoria(categoria: string) {
-        this._categoria = categoria;
-    }
+  get imagen() {
+    return this._imagen;
+  }
 
-    get descripcion() {
-        return this._descripcion;
-    }
+  set imagen(imagen: string) {
+    this._imagen = imagen;
+  }
+  /*
+  get idUsuario() {
+    return this._idUsuario;
+  }
 
-    set descripcion(descripcion: string) {
-        this._descripcion = descripcion;
-    }
+  set idUsuario(idUsuario: string) {
+    this._idUsuario = idUsuario;
+  }
+*/
+  set favorito(favorito: boolean) {
+    this._favorito = favorito;
+  }
 
-    get imagen() {
-        return this._imagen;
-    }
-
-    set imagen(imagen: string) {
-        this._imagen = imagen;
-    }
-
-    get idUsuario() {
-        return this._idUsuario;
-    }
-
-    set idUsuario(idUsuario: string) {
-        this._idUsuario = idUsuario;
-    }
+  get favorito() {
+    return this._favorito;
+  }
 }

@@ -10,18 +10,14 @@
     <div class="cromo-info">
       <h3>
         <i class="fas fa-redo" id="renew-icon"></i>
-        <!-- Icono de renovar -->
+        <!-- Icono de renovar-->
         {{ cromo.nombre }}
         <i
-          class="far fa-heart"
-          [ngClass]="{
-            'fas fa-heart': cromo.favorito,
-            'far fa-heart': !cromo.favorito
-          }"
-          (click)="toggleFavorito(cromo)"
-          style="cursor: pointer"
+          class="heart-icon"
+          [ngClass]="cromo.favorito ? 'fas fa-heart' : 'far fa-heart'"
+          (click)="cromo.favorito = !cromo.favorito"
         ></i>
-        <!-- Icono de corazón favorito -->
+        <!-- Icono de favorito -->
       </h3>
       <p>{{ cromo.descripcion }}</p>
     </div>

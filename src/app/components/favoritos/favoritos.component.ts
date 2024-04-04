@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { Cromo } from '../../models/Cromo';
 
 @Component({
   selector: 'app-favoritos',
@@ -32,7 +33,7 @@ export class FavoritosComponent {
         'https://firebasestorage.googleapis.com/v0/b/intercromo-6a7d7.appspot.com/o/images%2FGyarados_Cromo.jpg?alt=media&token=d4986c90-978e-45e5-a756-54dfb05e8dac',
       descripcion:
         'Charizard es un Pokémon de tipo fuego/volador introducido en la primera generación. Es la evolución de Charmeleon.',
-      favorito: false,
+      favorito: true,
     },
     {
       nombre: 'Bulbasaur',
@@ -56,7 +57,7 @@ export class FavoritosComponent {
         'https://firebasestorage.googleapis.com/v0/b/intercromo-6a7d7.appspot.com/o/images%2FGyarados_Cromo.jpg?alt=media&token=d4986c90-978e-45e5-a756-54dfb05e8dac',
       descripcion:
         'Squirtle es un Pokémon de tipo agua introducido en la primera generación. Es el Pokémon número 7 en la Pokédex Nacional.',
-      favorito: false,
+      favorito: true,
     },
     {
       nombre: 'Juanito',
@@ -72,11 +73,12 @@ export class FavoritosComponent {
         'https://firebasestorage.googleapis.com/v0/b/intercromo-6a7d7.appspot.com/o/images%2FGyarados_Cromo.jpg?alt=media&token=d4986c90-978e-45e5-a756-54dfb05e8dac',
       descripcion:
         'Squirtle es un Pokémon de tipo agua introducido en la primera generación. Es el Pokémon número 7 en la Pokédex Nacional.',
-      favorito: false,
+      favorito: true,
     },
   ];
 
-  toggleFavorito(cromo: any) {
+  toggleFavorito(cromo: Cromo) {
     cromo.favorito = !cromo.favorito;
+    console.log(cromo.favorito);
   }
 }
