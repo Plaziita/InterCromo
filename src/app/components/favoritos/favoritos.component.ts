@@ -1,22 +1,18 @@
-import { Component, OnInit } from '@angular/core';
-import { CromoService } from '../../../../../server/src/app/data-access/cromos/cromo.service';
-import { Cromo } from '../../models/Cromo';
+import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-favoritos',
+  standalone: true,
+  imports: [CommonModule],
   templateUrl: './favoritos.component.html',
   styleUrls: ['./favoritos.component.css'],
 })
-export class FavoritosComponent implements OnInit {
-  //cromos: any[];
+export class FavoritosComponent {
 
-  constructor(private cromoService: CromoService) {}
+  constructor() {}
 
-  ngOnInit() {
-    this.cromoService.getCromos().subscribe((cromos) => {
-      //  this.cromos = cromos;
-    });
-  }
+  
 
   toggleFavorito(cromo: any) {
     cromo.favorito = !cromo.favorito;
