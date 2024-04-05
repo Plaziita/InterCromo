@@ -1,9 +1,13 @@
-header {
+div {
     display: flex;
     padding-inline-start: 30px;
     padding-inline-end: 30px;
     justify-content: space-between;
     background-color: #768cbb;
     align-items: center;
-    margin-inline: 20px;
+}
+
+input {
+    width: 200px;
+    height: 200px;
 }

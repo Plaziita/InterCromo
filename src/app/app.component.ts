@@ -21,4 +21,5 @@ import { BarraBusquedaComponent } from './components/barra-busqueda/barra-busque
 })
 export class AppComponent {
   title = 'cliente';
+  archivos: File[] = [];
 }
