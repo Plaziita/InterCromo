@@ -1,23 +1,24 @@
-
-  <div class="cromo-container">
-    @for (cromo of cromos; track $index) {
-        <div class="favoritos">
-            <img [src]="cromo.imagen" />
-            <div class="cromo-info">
-              <h3>
-                <i class="fas fa-redo" id="renew-icon"></i>
-                <!-- Icono de renovar-->
-                {{ cromo.nombre }}
-                <i
-                  class="heart-icon"
-                  [ngClass]="cromo.favorito ? 'fas fa-heart' : 'far fa-heart'"
-                  (click)="cromo.favorito = !cromo.favorito"
-                ></i>
-                <!-- Icono de favorito -->
-              </h3>
-              <p>{{ cromo.descripcion }}</p>
-            </div>
-          </div>
+<div class="container">
+  @for (cromo of cromos; track $index) {
+    <div class="cromo-container">
+      <div class="card">
+        <img [src]="cromo.imagen" />
+        <div class="cromo-info">
+          <h3>
+            <i class="fas fa-redo" id="renew-icon"></i>
+            <!-- Icono de renovar-->
+            {{ cromo.nombre }}
+            <i
+              class="heart-icon"
+              [ngClass]="cromo.favorito ? 'fas fa-heart' : 'far fa-heart'"
+              (click)="cromo.favorito = !cromo.favorito"
+            ></i>
+            <!-- Icono de favorito -->
+          </h3>
+          <p>{{ cromo.descripcion }}</p>
+        </div>
+      </div>
+    </div>
     }
     
-  </div>
+</div>
