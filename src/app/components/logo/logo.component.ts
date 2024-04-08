@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Router, RouterLink } from '@angular/router';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-logo',
@@ -11,12 +11,4 @@ import { Router, RouterLink } from '@angular/router';
 export class LogoComponent {
   imagenLogo = "../../assets/logo.svg"
 
-  constructor(private router: Router) {
-
-  }
-
-
-  homelink() {
-    this.router.navigate(['/'])
-  }
 }
