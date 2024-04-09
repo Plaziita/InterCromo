@@ -1,1 +1,13 @@
-<p>chat works!</p>
+<div *ngIf="authState | async as user">
+    <h1>Bienvenido al chat, {{ user.displayName }}!</h1>
+    <ul>
+      <li *ngFor="let message of messages | async">
+        <strong>{{ message.username }}</strong>: {{ message.text }}
+      </li>
+    </ul>
+    <form (submit)="sendMessage()">
+      <input type="text" [(ngModel)]="newMessage" placeholder="Escribe tu mensaje aquí...">
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+  

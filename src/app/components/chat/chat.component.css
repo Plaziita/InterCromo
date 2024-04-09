@@ -1,0 +1,38 @@
+/* chat.component.css */
+
+:host {
+    display: block;
+    padding: 20px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 10px;
+  }
+  
+  form {
+    margin-top: 20px;
+  }
+  
+  input[type="text"] {
+    padding: 8px;
+    width: 70%;
+  }
+  
+  button {
+    padding: 8px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  

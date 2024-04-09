@@ -2,11 +2,12 @@
   display: flex;
   flex-wrap: wrap;
   text-align: justify;
+  max-width: 100%; /* Asegura que el contenedor no exceda el ancho del viewport */
 }
 
 .favoritos {
   position: relative;
-  flex: 1 0 20%;
+  width: calc(25% - 20px); /* 25% del contenedor menos el espacio entre los elementos */
   padding: 16px;
   border-radius: 10px;
   font-family: Verdana;
@@ -15,7 +16,7 @@
 }
 
 .favoritos img {
-  width: 100%;
+  max-width: 100%; /* Cambiado de width a max-width */
   height: auto;
   border-radius: 8px;
   margin-bottom: 10px; /* Añadido margen inferior para separar la imagen del resto del contenido */
