@@ -6,8 +6,6 @@ import { RouterLink } from '@angular/router';
   standalone: true,
   imports: [RouterLink],
   templateUrl: './barra-navegacion.component.html',
-  styleUrl: './barra-navegacion.component.css'
+  styleUrl: './barra-navegacion.component.css',
 })
-export class BarraNavegacionComponent {
-
-}
+export class BarraNavegacionComponent {}

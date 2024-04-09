@@ -1,6 +1,6 @@
 export class Cromo {
   private _nombre: string;
-  //private _categoria: string;
+  private _categoria: string;
   private _descripcion: string;
   private _imagen: string;
   // private _idUsuario: string;
@@ -10,12 +10,14 @@ export class Cromo {
     nombre: string,
     descripcion: string,
     imagen: string,
-    favorito: boolean = false
+    favorito: boolean = false,
+    categoria: string
   ) {
     this._nombre = nombre;
     this._descripcion = descripcion;
     this._imagen = imagen;
     this._favorito = favorito;
+    this._categoria = categoria;
   }
 
   get nombre() {
@@ -25,7 +27,7 @@ export class Cromo {
   set nombre(nombre: string) {
     this._nombre = nombre;
   }
-  /*
+
   get categoria() {
     return this._categoria;
   }
@@ -33,7 +35,7 @@ export class Cromo {
   set categoria(categoria: string) {
     this._categoria = categoria;
   }
-*/
+
   get descripcion() {
     return this._descripcion;
   }

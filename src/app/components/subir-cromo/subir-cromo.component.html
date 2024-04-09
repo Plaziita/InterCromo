@@ -1,0 +1,56 @@
+<form [formGroup]="cromoForm" (ngSubmit)="crearCromo()">
+  <div>
+    <label for="nombre">Nombre del cromo:</label>
+    <input
+      type="text"
+      id="nombre"
+      name="nombre"
+      formControlName="nombre"
+      required
+    />
+  </div>
+  <div>
+    <label for="categoria">Categoría:</label>
+    <select
+      id="categoria"
+      name="categoria"
+      formControlName="categoria"
+      required
+    >
+      <option value="">Seleccionar</option>
+      <option value="Pokemon">Pokemon</option>
+      <option value="Magic">Magic</option>
+      <option value="Adrenalin">Adrenalin</option>
+      <option value="Otro">Otro</option>
+    </select>
+  </div>
+  <div>
+    <label for="descripcion">Descripción:</label><br />
+    <textarea
+      id="descripcion"
+      name="descripcion"
+      rows="4"
+      cols="50"
+      formControlName="description"
+      required
+    ></textarea>
+  </div>
+  <div>
+    <label for="imagen">Imagen del cromo:</label>
+    <input
+      type="file"
+      id="imagen"
+      name="imagen"
+      accept="image/*"
+      (change)="onFileChange($event)"
+      required
+      multiple
+    />
+  </div>
+  <div id="preview">
+    <img id="imagen-preview" src="" alt="Vista previa de la imagen" />
+  </div>
+  <div>
+    <button>Subir Cromo</button>
+  </div>
+</form>
